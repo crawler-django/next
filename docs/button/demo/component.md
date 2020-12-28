@@ -25,8 +25,8 @@ const props = {
 };
 
 ReactDOM.render(<Box direction="row" spacing={20} >
-    <Button {...props} type="primary">alibaba.com</Button>
-    <Button {...props} type="secondary">alibaba.com</Button>
     <Button {...props} type="normal">alibaba.com</Button>
+    <Button {...props} type="primary">alibaba.com</Button>
+    <Button {...props} type="warning">alibaba.com</Button>
 </Box>, mountNode);
 ````

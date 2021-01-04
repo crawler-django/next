@@ -251,7 +251,7 @@ function getLiveScript(code) {
         /* eslint-disable array-callback-return */
         .map(line => {
             if (!/^(?!\/\/)/.test(line)) return;
-            let variable = line.match(/(?<=import\s\{\s+).*(?=\s+\}\s+from)/);
+            let variable = line.match(/(?<=import\s+\{\s*).*(?=\s*\}\s+from)/);
             if (variable) return `${variable[0]},`;
             variable = line.match(/(?<=import\s).*(?=\s+from)/);
             if (variable) return `${variable[0]},`;
